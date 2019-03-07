@@ -1,0 +1,38 @@
+#about-text-container{
+  align-self: flex-end;
+  margin-right: 10vw;
+}
+
+#about-image {
+  margin-left: -50px;
+  width: 50vw;
+}
+#about-text-container {
+  p {
+    font-size: 1.2em;
+  }
+}
+@media all and (max-width: 1000px) {
+  #about-text-container {
+    justify-content: flex-start;
+    padding-top: 50px;
+    
+    h2 {
+      font-size: 3.4em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+  #about-image {
+    opacity: 0.4;
+    width: auto;
+    height: 110vh;
+    position: absolute;
+    right: -200px;
+    top: 0;
+  }
+}

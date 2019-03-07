@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129883411-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129883411-2');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta property="og:site_name" content="APOGEE '19">
+    <meta property="og:title" content="APOGEE'19 | Intro">
+    <meta property="og:description" content="The official website of the technical festival of BITS Pilani, Pilani Campus - 2019 Edition">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://bits-apogee.org/">
+    <meta property="og:type" content="business.business">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>APOGEE 2019 | The Reality Roulette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="./static/favicon.png" />
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,700" rel="stylesheet">  -->
+    <style>
+        #loader-slogan {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            animation-name: fadeOutText;
+            animation-duration: 0.3s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 1.3s;
+            text-align: center;
+            width: 100vw;
+            transition: opacity 0.3s ease-in-out;
+        }
+        @keyframes fadeOutText {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        #loader-label {
+        position: relative;
+        top: 66%;
+        animation-name: fadeInLoader;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1.55s;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        }
+        #loader-p {
+        color: #d0cade;
+        font-size: .889em;
+        line-height: 1.2;
+        font-family: 'Inconsolata', sans-serif;
+        text-align: center;
+        }
+        #loader-h2 {
+        color: #fafafa;
+        font-size: 1.777em;
+        line-height: 1.2;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        }
+        #load-wrapper {
+        transition: opacity 0.3s ease-in-out;
+        position: fixed;
+        background: #2A2438;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        }
+
+        #loader{
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform:scale(4,4);
+        opacity: 0;
+        animation-name: fadeInLoader;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1.55s;
+        transition: opacity 0.3s ease-in-out;
+        }
+        @keyframes fadeInLoader {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .ball,
+        .colorRing,
+        .ringTwo,
+        .ringThree,
+        .ringFour {
+        top:50%;
+        left:50%;
+        display:block;
+        border-radius:50%;
+        position:absolute;
+        vertical-align:middle;
+        }
+
+        .ball {
+        width:10px;
+        height:10px;
+        margin:-6px 0 0 -6px;
+        background: #5C5470;
+        animation:2000ms pulseInPrimary 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)  infinite;
+        -webkit-animation:2000ms pulseInPrimary 1500ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;	
+        }
+
+        .colorRing {
+        width:16px;
+        height:16px;
+        margin:-9px 0 0 -9px;
+        border:1px solid #86CB92 ;
+        animation:2000ms pulseIn cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+        -webkit-animation:2000ms pulseIn 100ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;						
+        }
+        
+
+        @keyframes pulseIn {
+        0%{
+            opacity:0;
+            transform:scale(0.2,0.2);
+        }
+        50% {
+            opacity:1;
+            transform:scale(1,1);
+        }
+        100% {
+            opacity:0;
+            transform:scale(0.2,0.2);
+        }
+        }
+
+        @-webkit-keyframes pulseIn {
+        0% {
+            opacity:0;
+            -webkit-transform:scale(0.2,0.2);
+        }
+        50% {
+            opacity:1;
+            -webkit-transform:scale(1,1);
+        }
+        100%{
+            opacity:0;
+            -webkit-transform:scale(0.2,0.2);
+        }
+        }
+
+        @keyframes pulseInPrimary{
+        0%{
+            opacity:1;
+            transform:scale(0.2,0.2);
+        }
+        50%{
+            opacity:1;
+            transform:scale(1.4,1.4);
+        }
+        100%{
+            opacity:1;
+            transform:scale(0.1,0.1);
+        }
+        }
+
+        @-webkit-keyframes pulseInPrimary{
+        0%{
+            opacity:0;
+            -webkit-transform:scale(0.1,0.1);
+        }
+        50%{
+            opacity:1;
+            -webkit-transform:scale(1,1);
+        }
+        100%{
+            opacity:0;
+            -webkit-transform:scale(0.2,0.2);
+        }
+        }
+
+
+        .ringTwo{
+        width:40px;
+        height:40px;
+        background: rgba(250, 250, 250, 0.03);
+        border:1px solid #fafafa;
+        margin:-21px 0 0 -21px;
+        animation:2000ms pulseIn 500ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+        -webkit-animation:2000ms pulseIn 500ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite	
+        }
+
+        @keyframes pulseInSecondary {
+        0%{
+            opacity:0;
+            transform:scale(0.2,0.2);
+        }
+        50% {
+            opacity:1;
+            transform:scale(1,1);
+        }
+        100% {
+            opacity:0;
+            transform:scale(0.2,0.2);
+        }
+        }
+
+        @-webkit-keyframes pulseInSecondary {
+        0% {
+            opacity:0;
+            -webkit-transform:scale(0.2,0.2);
+        }
+        50% {
+            opacity:1;
+            -webkit-transform:scale(1,1);
+        }
+        100%{
+            opacity:0;
+            -webkit-transform:scale(0.2,0.2);
+        }
+        }
+
+
+        .ringThree{
+        width:48px;
+        height:48px;
+        border:1px solid rgba(250, 250, 250, 0.03);
+        margin:-25px 0 0 -25px;
+        animation:2000ms pulseInSecondary 550ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+        -webkit-animation:2000ms pulseInSecondary 550ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;	
+        }
+
+        .ringFour{
+        width:56px;
+        height:56px;
+        border:1px solid rgba(250, 250, 250, 0.03);
+        margin:-29px 0 0 -29px;
+        animation:2000ms pulseInSecondary 600ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+        -webkit-animation:2000ms pulseInSecondary 600ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;	
+        }
+        .who-can-apply{
+            line-height: 1.5;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="register-cross"></div>
+    <div id="register">
+        <div id="register-content">
+            <h2>REGISTRATION</h2>
+            <form id="register-form" action="">
+                <div id="register-form-content">
+                    <label>Name</label>
+                    <input type="text" name="name" id="register-name">
+                    <label>College</label>
+                    <select id="register-college">
+                        <option id = "reg-clg-label" value="" disabled selected>Loading...</option>
+                    </select>
+                    <label class="reg-message">If you cannot find your college above, please contact PCr (<a href="tel:+919462011235">+91-9462011235</a>)</label>
+                    <label>Gender</label>
+                    <div id="gender-div">
+                        <div>
+                            <input type="radio" id="male" class="gender-option" name="gender" value="M" checked>
+                            Male
+                        </div>
+                        <div>
+                            <input type="radio" id="female" class="gender-option" name="gender" value="F">
+                            Female
+                        </div>
+                        <div>
+                            <input type="radio" id="other" class="gender-option" name="gender" value="O"> Other
+                        </div>
+                    </div>
+                    <label>City</label>
+                    <input type="text" name="city" id="register-city">
+                    <label>Email</label>
+                    <input type="email" name="email" id="register-email">
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="register-phone">
+                    <label id="error"></label>
+                    <div id="register-buttons">
+                        <input type="submit" id="register-submit" class="register-button" value="Register">
+                        <button id="register-back" class="register-button">Go back</button>
+                    </div>
+                </div>
+                <div id="register-form-complete">
+                    <label>Your registration is complete.</label><br>
+                    <button id='register-again' class='register-button'>Register again</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="load-wrapper">
+        <div id="loader">
+            <span class="ringFour"></span>
+            <span class="ringThree"></span>
+            <span class="colorRing"></span>
+            <span class="ringTwo"></span>
+            <span class="ball"></span>
+        </div>
+        <div id="loader-label">
+            <h2 id="loader-h2">APOGEE 2019</h2>
+        </div>
+        <span id="loader-slogan">APOGEE 2019</span>
+    </div>
+    <div id="menu">
+        <div id="menu-cross"></div>
+        <span class="menu-item" id="home-menu-link">HOME</span>
+        <span class="menu-item" id="ambassador-menu-link">TIMELINE</span>
+        <!-- <span class="menu-item" id="registrations-menu-link">REGISTER</span> -->
+        <span class="menu-item" id="about-menu-link">ABOUT</span>
+        <span class="menu-item"><a href = "https://bits-apogee.org/aic" target = "_blank" style = "text-decoration: inherit; color: inherit">AIC</a></span>
+        <span class="menu-item" id="paperproject-menu-link">PAPER & PROJECT PRESENTATION</span>
+        <span class="menu-item" id="pastspeakers-menu-link">PAST SPEAKERS</span>
+        <span class="menu-item" id="events-menu-link">EVENTS</span>
+        <span class="menu-item" id="pastsponsors-menu-link">PAST SPONSORS</span>
+        <span class="menu-item" id="bitsmun-menu-link"><a href="http://bitsmun.co.in/" target="_blank">BITSMUN</a></span>
+        <span class="menu-item" id="aarohan-menu-link"><a href="https://www.bits-apogee.org/aarohan" target="_blank">AAROHAN</a></span>
+        <span class="menu-item" id="contact-menu-link">CONTACTS</span>
+    </div>
+    <div id="container">
+        <div id="navbar">
+            <div id="nav-logo">
+            </div>
+            <div id="nav-content">
+                <!-- <span class="desktop-only" id="registrations-nav-link">REGISTER</span> -->
+                <span class="desktop-only"><a href = "https://bits-apogee.org/aic" target = "_blank" style = "text-decoration: inherit; color: inherit">AIC</a></span>
+                <span class="desktop-only" id="ambassador-link">TIMELINE</span>
+                <span class="desktop-only" id="contact-link">CONTACTS</span>
+                <span class="desktop-only" id="pastsponsors-link">PAST SPONSORS</span>
+                <span class="mobile-only" id="menu-text">MENU</span>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="desktop-only">
+                <span id="days-count"></span> days to go
+            </div>
+            <div id="scroll-icon" class="desktop-only">
+            </div>
+            <div id="social-icons" class="desktop-only">
+            </div>
+            <div class="mobile-only">
+                <span id="scrollMore">SCROLL FOR MORE</span>
+            </div>
+        </div>
+        <div id="main-content-container">
+            <div id="particles-js-mobile" class="particles-js"></div>
+            <div id="main-image-container">
+                <div id="particles-js-desktop" class="particles-js"></div>
+                <div id="landing-image-container" class="image-container">
+                    <img src="./imgs/landing-main.png" alt="The Reality Roulette" id="landing-image" />
+                </div>
+
+                <div id="about-image-container" class="image-container">
+                    <object type="image/svg+xml" data="./static/svgs/about-main.svg" id="about-image"></object>
+                </div>
+
+                <div id="paperproject-image-container" class="image-container">
+                    <object type="image/svg+xml" data="./static/svgs/paperproject-main.svg" id="paperproject-image"></object>
+                </div>
+
+                <div id="pastspeakers-image-container" class="image-container">
+                    <object type="image/svg+xml" data="./static/svgs/pastspeakers-main.svg" id="pastspeakers-image"></object>
+                </div>
+
+                <div id="events-image-container" class="image-container">
+                    <object type="image/svg+xml" data="./static/svgs/events-main.svg" id="events-image"></object>
+                </div>
+
+                <div id="pastsponsors-image-container" class="image-container">
+                </div>
+
+                <div id="teaser-image-container" class="image-container">
+                    <object type="image/svg+xml" data="./static/svgs/teaser-main.svg" id="teaser-image"></object>
+                </div>
+
+                <div id="ambassador-image-container" class="image-container">
+                    <object type="image/svg+xml" data="./static/svgs/ambassador-main.svg" id="ambassador-image"></object>
+                </div>
+
+                <div id="contact-image-container" class="image-container">
+                </div>
+            </div>
+
+            <div id="main-text-container">
+                <div id="landing-text-container" class="text-container">
+                    <h2>BITS PILANI ENTERPRENEURSHIP EVENT</h2>
+                </div>
+
+                <div id="about-text-container" class="text-container">
+                    <h2>WHAT IS BITS Pilani Enterpreneurship Conclave</h2>
+                    <p>BITS Pilani Entrepreneurship Conclave is an initiative by APOGEE to bring together the finest minds redefining entrepreneurship and product innovation, to build conversation on the new frontiers 
+                        of startups and provide the next generation founders an opportunity to showcase their budding venture at a national platform to top mentors and 
+                        investors.
+                    </p>
+                </div>
+
+                <div id="paperproject-text-container" class="text-container">
+                  <h2>ABOUT</h2>
+                    <p>
+                        About the Event
+                        The Event shall be a 3-phase competition set to conclude on 30th March during APOGEE, the annual academic festival of BITS Pilani- Pilani Campus
+                        . With exciting prizes and rewards for the winners, 
+                        the event is an ideal platform for all the budding entreprenuers to showcase their vision and business acumen.
+                        The Elements of the Entrepreneurship Conclave will include – (Please Use Elements/Graphics to denote the elements)
+                        Business Plan Competition
+                        Guest Lectures 
+                        Workshops
+                        Speed Dating – Investor Networking
+                        Who Can Apply?
+                        <ul class="who-can-apply">
+                            <li>Business Plan Competition</li>
+                            <li>Guest Lectures</li>
+                            <li>Workshops</li>
+                            <li>Speed Dating – Investor Networking</li>
+                        </ul>
+                    </p>
+                    <!-- <div id="pep-btns">
+                        <a class="pep-register-btn register-button" href="https://bits-apogee.org/2019/portal/" target="_blank">Projects
+                            Portal</a>
+                        <a class="pep-register-btn register-button" href="https://bits-apogee.org/paper-presentation/accounts/login/?next=/paper-presentation/portal/"
+                            target="_blank">Paper Portal</a>
+                    </div> -->
+                </div>
+
+                <div id="pastspeakers-text-container" class="text-container">
+                    <h2>SPEAKERS</h2>
+
+                    <div class="carousel-speaker">
+                    </div>
+                </div>
+
+                <div id="events-text-container" class="text-container">
+                    <h2>WHAT'S IN FOR YOU</h2>
+                    <p> <ul class="who-can-apply"><li>Top 30 Teams get selected for the final Pitching Round in front of top Investors in India</li>
+                        <li>Top Team gets a Cash Prize of INR 100,000 and Second Team gets a cash prize of INR 25,000</li>
+                        <li>Top 10 Startups Get Featured on YourStory </li>
+                        <li>Get Cloud Credits worth thousand of dollars</li>
+                        <li>Access to Premium pool of investors and Mentors</li>
+                        <li>Premium Access to YourStory TechSparks 2019 – India’s Largest Entrepreneurship Summit</li>
+                        <li>Access to YourStory research reports (worth INR 25,000)</li>
+                    </ul>
+                    </p>
+                    <div class="carousel-events" style ="display:none">
+                    </div>
+                </div>
+
+                <div id="pastsponsors-text-container" class="text-container">
+                    <h2>PAST SPONSORS</h2>
+                    <div id="pastsponsor-container" class="carousel-pastsponsors">
+                    </div>
+                </div>
+
+                <div id="teaser-text-container" class="text-container">
+                    <h2>TEASER</h2>
+                    <div id="teaser-preview">
+                        <a href="https://youtu.be/MqpPYIjDw4I" target="_blank">
+                            <div id="teaser-preview-image">
+                                <img src="./images/yt.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="ambassador-text-container" class="text-container">
+                    <div id="campus-ambassador-content">
+                        <h2>TIMELINE</h2>
+                        <p>
+                            APOGEE, in its 37th edition now, and bigger than ever, has cemented itself as one of the
+                            biggest platforms to discover, nurture and accelerate fresh ideas from bright minds from
+                            all over the country, attracting more than 8000 students, from over 100 colleges. Become a
+                            campus ambassador today and be a face for APOGEE at your institution. With the
+                            responsibility of outreach and publicity of the festival in your college/university, it is
+                            people like you who help APOGEE grow bigger and better. Also, this isn’t all for nothing.
+                            Stand a chance to work with one of our awesome sponsors, get LoRs, goodies, passes and much
+                            more!
+                        </p>
+                        <div id="ambassador-btns">
+                            <p>Register as campus ambassador now</p>
+                            <div id="" class="register-button"><a href="https://bits-apogee.org/ca-2019/" target="_blank">CA Registration</a></div>
+                            <p>Register as participant to stay tuned for updates</p>
+                            <div id="open-register" class="register-button">Participant Registration</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-text-container" class="text-container">
+                    <h3>THE REALITY ROULETTE</h3>
+                    <h4>28<sup>th</sup> March - 31<sup>st</sup>March</h4>
+                    <div id="contact-container" class="carousel-contact">
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/aakash.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Aakash Singh<br>
+                                General Secretary, Student Union<br>
+                                +91-9468923617<br>
+                                gensec@pilani.bits-pilani.ac.in<br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/parv.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Parv Panthari <br>
+                                Invitations and Correspondence <br>
+                                +91-9462011235 <br>
+                                pcr@bits-apogee.org <br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/apoorv.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Apoorv Saxena<br>
+                                Registration, Events and Projects<br>
+                                +91-7239805667<br>
+                                controls@bits-apogee.org<br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/anirudh.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Anirudh Singla<br>
+                                Guest Lectures and Paper Presentation<br>
+                                +91-9818536680<br>
+                                pep@bits-apogee.org<br>
+                                guestlectures@bits-apogee.org<br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/anushka.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Anushka Pathak <br>
+                                Sponsorship and Marketing <br>
+                                +91-7795025103 <br>
+                                sponsorship@bits-apogee.org <br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/megh.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Megh Thakkar<br>
+                                Website and Online Registrations<br>
+                                +91-9829799877<br>
+                                webmaster@bits-apogee.org<br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/yatharth.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Yatharth Singh <br>
+                                Reception and Accomodation <br>
+                                +91-9971393939 <br>
+                                reccnacc@bits-apogee.org <br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/aditya.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Aditya Pawar<br>
+                                Publicity and Online Partnerships<br>
+                                +91-9829971666<br>
+                                adp@bits-apogee.org<br>
+                            </div>
+                        </div>
+                        <div class="person-container">
+                            <div class="person-image"><img src="./imgs/contacts/satyanshrai.jpg" alt="Costa"> </div>
+                            <div class="person-info">
+                                Satyansh Rai <br>
+                                President, Student Union <br>
+                                +91-9151178228 <br>
+                                president@pilani.bits-pilani.ac.in <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./static/particles.min.js"></script>
+    <script src="./static/rellax.min.js"></script>
+</body>
+
+</html>

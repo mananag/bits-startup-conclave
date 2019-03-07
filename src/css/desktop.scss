@@ -1,0 +1,46 @@
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    color: #fff;
+    padding: 20px 35px 20px 25px;    
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    z-index: 99;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+
+    #scroll-icon {
+        width: 20px;
+    }
+    #social-icons {
+        width: 150px;
+        a {
+            margin-right: 20px;
+            text-decoration: none;
+            cursor: pointer;
+
+            img {
+                max-height: 25px;
+            }
+        }
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+    #instagram-icon, #facebook-icon, #twitter-icon {
+        cursor: pointer;
+    }
+}

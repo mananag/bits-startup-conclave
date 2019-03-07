@@ -1,0 +1,80 @@
+#pastspeakers-image-container {
+  align-self: center;
+
+  img {
+    opacity: 0.4;
+  }
+}
+
+#pastspeakers-text-container {
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-elem-pastspeakers {
+  transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  padding-top: 60px;
+}
+
+.carousel-elem-pastspeakers.is-selected {
+  transform: scale(1.2);
+}
+
+.pastspeakers-img {
+  height: 220px;
+  width: 220px;
+  // background-size: cover;
+  // background-position: center;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.pastspeakers-name, .pastspeakers-subname {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+.pastspeakers-name {
+  text-transform: uppercase;
+  font-size: 25px;
+  max-width: 70%;
+}
+
+.pastspeakers-subname {
+  font-size: 15px;
+  padding-bottom: 45px;
+  max-width: 70%;
+}
+
+#pastspeakers-image {
+  width: 45vw;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+@media all and (max-width: 1000px) {
+  #pastspeakers-text-container {
+    h2 {
+      font-size: 2em;
+    }
+  }
+
+  .pastspeakers-name {
+    font-size: 20px;
+  }
+
+  .pastspeakers-subname {
+    font-size: 15px;
+  }
+
+  #pastspeakers-image {
+    width: auto;
+    height: 110vh;
+    margin-top: 100px;
+  }
+}
