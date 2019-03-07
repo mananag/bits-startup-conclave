@@ -269,6 +269,20 @@
             font-weight: 400;
             font-size: 1.2em;
         }
+        #About{
+            background: url('timeline.png');  
+        }
+        .carousel-speaker{
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
+        .carousel-contact{
+            padding-left: 20vw;
+            padding-right: 10vw;
+        }
+        #contact-text-container{
+            width:70vw;
+        }
     </style>
 </head>
 
@@ -335,16 +349,16 @@
     <div id="menu">
         <div id="menu-cross"></div>
         <span class="menu-item" id="home-menu-link">HOME</span>
-        <span class="menu-item" id="ambassador-menu-link">TIMELINE</span>
+        <!-- <span class="menu-item" id="ambassador-menu-link">TIMELINE</span> -->
         <!-- <span class="menu-item" id="registrations-menu-link">REGISTER</span> -->
-        <span class="menu-item" id="about-menu-link">ABOUT</span>
-        <span class="menu-item"><a href = "https://bits-apogee.org/aic" target = "_blank" style = "text-decoration: inherit; color: inherit">AIC</a></span>
-        <span class="menu-item" id="paperproject-menu-link">PAPER & PROJECT PRESENTATION</span>
+        <span class="menu-item" id="about-menu-link">WHAT IS STARTUP CONCLAVE</span>
+        <!-- <span class="menu-item"><a href = "https://bits-apogee.org/aic" target = "_blank" style = "text-decoration: inherit; color: inherit">AIC</a></span> -->
+        <span class="menu-item" id="paperproject-menu-link">ABOUT</span>
         <span class="menu-item" id="pastspeakers-menu-link">PAST SPEAKERS</span>
-        <span class="menu-item" id="events-menu-link">EVENTS</span>
-        <span class="menu-item" id="pastsponsors-menu-link">PAST SPONSORS</span>
-        <span class="menu-item" id="bitsmun-menu-link"><a href="http://bitsmun.co.in/" target="_blank">BITSMUN</a></span>
-        <span class="menu-item" id="aarohan-menu-link"><a href="https://www.bits-apogee.org/aarohan" target="_blank">AAROHAN</a></span>
+        <span class="menu-item" id="events-menu-link">WhAT'S IN FOR YOU</span>
+        <!-- <span class="menu-item" id="pastsponsors-menu-link">PAST SPONSORS</span> -->
+        <!-- <span class="menu-item" id="bitsmun-menu-link"><a href="http://bitsmun.co.in/" target="_blank">BITSMUN</a></span>
+        <span class="menu-item" id="aarohan-menu-link"><a href="https://www.bits-apogee.org/aarohan" target="_blank">AAROHAN</a></span> -->
         <span class="menu-item" id="contact-menu-link">CONTACTS</span>
     </div>
     <div id="container">
@@ -353,15 +367,15 @@
             </div>
             <div id="nav-content">
                 <!-- <span class="desktop-only" id="registrations-nav-link">REGISTER</span> -->
-                <span class="desktop-only"><a href = "https://bits-apogee.org/aic" target = "_blank" style = "text-decoration: inherit; color: inherit">AIC</a></span>
-                <span class="desktop-only" id="ambassador-link">TIMELINE</span>
+                <!-- <span class="desktop-only"><a href = "https://bits-apogee.org/aic" target = "_blank" style = "text-decoration: inherit; color: inherit">AIC</a></span> -->
+                <!-- <span class="desktop-only" id="ambassador-link">TIMELINE</span> -->
                 <span class="desktop-only" id="contact-link">CONTACTS</span>
-                <span class="desktop-only" id="pastsponsors-link">PAST SPONSORS</span>
+                <!-- <span class="desktop-only" id="pastsponsors-link">PAST SPONSORS</span> -->
                 <span class="mobile-only" id="menu-text">MENU</span>
             </div>
         </div>
         <div id="footer">
-            <div class="desktop-only">
+            <div class="desktop-only" style="opacity:0">
                 <span id="days-count"></span> days to go
             </div>
             <div id="scroll-icon" class="desktop-only">
@@ -398,14 +412,14 @@
 
                 <div id="pastsponsors-image-container" class="image-container">
                 </div>
-
+<!-- 
                 <div id="teaser-image-container" class="image-container">
                     <object type="image/svg+xml" data="./static/svgs/teaser-main.svg" id="teaser-image"></object>
                 </div>
 
                 <div id="ambassador-image-container" class="image-container">
                     <object type="image/svg+xml" data="./static/svgs/ambassador-main.svg" id="ambassador-image"></object>
-                </div>
+                </div> -->
 
                 <div id="contact-image-container" class="image-container">
                 </div>
@@ -413,7 +427,9 @@
 
             <div id="main-text-container">
                 <div id="landing-text-container" class="text-container">
-                    <h2>BITS PILANI ENTERPRENEURSHIP EVENT</h2>
+                    <h2>BITS PILANI ENTERPRENEURSHIP EVENT-NEXT FOUNDER'S</h2>
+                    <h2>30 March,2019</h2>
+                    <h2>BITS Pilani, Pilani Campus</h2>
                 </div>
 
                 <div id="about-text-container" class="text-container">
@@ -443,6 +459,7 @@
                             <li>Workshops</li>
                             <li>Speed Dating – Investor Networking</li>
                         </ul>
+                        <div id="About"></div>
                     </p>
                     <!-- <div id="pep-btns">
                         <a class="pep-register-btn register-button" href="https://bits-apogee.org/2019/portal/" target="_blank">Projects
@@ -460,27 +477,28 @@
                 </div>
 
                 <div id="events-text-container" class="text-container">
-                    <h2>WHAT'S IN FOR YOU</h2>
-                    <p> <ul class="who-can-apply"><li>Top 30 Teams get selected for the final Pitching Round in front of top Investors in India</li>
-                        <li>Top Team gets a Cash Prize of INR 100,000 and Second Team gets a cash prize of INR 25,000</li>
-                        <li>Top 10 Startups Get Featured on YourStory </li>
-                        <li>Get Cloud Credits worth thousand of dollars</li>
-                        <li>Access to Premium pool of investors and Mentors</li>
-                        <li>Premium Access to YourStory TechSparks 2019 – India’s Largest Entrepreneurship Summit</li>
-                        <li>Access to YourStory research reports (worth INR 25,000)</li>
-                    </ul>
-                    </p>
-                    <div class="carousel-events" style ="display:none">
+                        <h2>WHAT'S IN FOR YOU</h2>
+                        <p> <ul class="who-can-apply"><li>Top 30 Teams get selected for the final Pitching Round in front of top Investors in India</li>
+                            <li>Top Team gets a Cash Prize of INR 100,000 and Second Team gets a cash prize of INR 25,000</li>
+                            <li>Top 10 Startups Get Featured on YourStory </li>
+                            <li>Get Cloud Credits worth thousand of dollars</li>
+                            <li>Access to Premium pool of investors and Mentors</li>
+                            <li>Premium Access to YourStory TechSparks 2019 – India’s Largest Entrepreneurship Summit</li>
+                            <li>Access to YourStory research reports (worth INR 25,000)</li>
+                        </ul>
+                        </p>
+                    <div class="carousel-events" >
                     </div>
+                    
                 </div>
 
                 <div id="pastsponsors-text-container" class="text-container">
-                    <h2>PAST SPONSORS</h2>
+                    <h2>SPONSORS</h2>
                     <div id="pastsponsor-container" class="carousel-pastsponsors">
                     </div>
                 </div>
 
-                <div id="teaser-text-container" class="text-container">
+                <!-- <div id="teaser-text-container" class="text-container">
                     <h2>TEASER</h2>
                     <div id="teaser-preview">
                         <a href="https://youtu.be/MqpPYIjDw4I" target="_blank">
@@ -493,18 +511,6 @@
                 </div>
 
                 <div id="ambassador-text-container" class="text-container">
-                    <div id="campus-ambassador-content">
-                        <h2>TIMELINE</h2>
-                        <p>
-                            APOGEE, in its 37th edition now, and bigger than ever, has cemented itself as one of the
-                            biggest platforms to discover, nurture and accelerate fresh ideas from bright minds from
-                            all over the country, attracting more than 8000 students, from over 100 colleges. Become a
-                            campus ambassador today and be a face for APOGEE at your institution. With the
-                            responsibility of outreach and publicity of the festival in your college/university, it is
-                            people like you who help APOGEE grow bigger and better. Also, this isn’t all for nothing.
-                            Stand a chance to work with one of our awesome sponsors, get LoRs, goodies, passes and much
-                            more!
-                        </p>
                         <div id="ambassador-btns">
                             <p>Register as campus ambassador now</p>
                             <div id="" class="register-button"><a href="https://bits-apogee.org/ca-2019/" target="_blank">CA Registration</a></div>
@@ -512,16 +518,16 @@
                             <div id="open-register" class="register-button">Participant Registration</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div id="contact-text-container" class="text-container">
-                    <h3>THE REALITY ROULETTE</h3>
-                    <h4>28<sup>th</sup> March - 31<sup>st</sup>March</h4>
+                    <h3>THE STARTUP CONCLAVE</h3>
+                    <h4>30<sup>th</sup> March</h4>
                     <div id="contact-container" class="carousel-contact">
                         <div class="person-container">
                             <div class="person-image"><img src="./imgs/contacts/aakash.jpg" alt="Costa"> </div>
                             <div class="person-info">
-                                Aakash Singh<br>
+                                Manav Kaushik<br>
                                 General Secretary, Student Union<br>
                                 +91-9468923617<br>
                                 gensec@pilani.bits-pilani.ac.in<br>
@@ -539,7 +545,7 @@
                         <div class="person-container">
                             <div class="person-image"><img src="./imgs/contacts/apoorv.jpg" alt="Costa"> </div>
                             <div class="person-info">
-                                Apoorv Saxena<br>
+                                Jay Vashishtha<br>
                                 Registration, Events and Projects<br>
                                 +91-7239805667<br>
                                 controls@bits-apogee.org<br>
@@ -548,58 +554,14 @@
                         <div class="person-container">
                             <div class="person-image"><img src="./imgs/contacts/anirudh.jpg" alt="Costa"> </div>
                             <div class="person-info">
-                                Anirudh Singla<br>
+                                Rahul Sunder<br>
                                 Guest Lectures and Paper Presentation<br>
                                 +91-9818536680<br>
                                 pep@bits-apogee.org<br>
                                 guestlectures@bits-apogee.org<br>
                             </div>
                         </div>
-                        <div class="person-container">
-                            <div class="person-image"><img src="./imgs/contacts/anushka.jpg" alt="Costa"> </div>
-                            <div class="person-info">
-                                Anushka Pathak <br>
-                                Sponsorship and Marketing <br>
-                                +91-7795025103 <br>
-                                sponsorship@bits-apogee.org <br>
-                            </div>
-                        </div>
-                        <div class="person-container">
-                            <div class="person-image"><img src="./imgs/contacts/megh.jpg" alt="Costa"> </div>
-                            <div class="person-info">
-                                Megh Thakkar<br>
-                                Website and Online Registrations<br>
-                                +91-9829799877<br>
-                                webmaster@bits-apogee.org<br>
-                            </div>
-                        </div>
-                        <div class="person-container">
-                            <div class="person-image"><img src="./imgs/contacts/yatharth.jpg" alt="Costa"> </div>
-                            <div class="person-info">
-                                Yatharth Singh <br>
-                                Reception and Accomodation <br>
-                                +91-9971393939 <br>
-                                reccnacc@bits-apogee.org <br>
-                            </div>
-                        </div>
-                        <div class="person-container">
-                            <div class="person-image"><img src="./imgs/contacts/aditya.jpg" alt="Costa"> </div>
-                            <div class="person-info">
-                                Aditya Pawar<br>
-                                Publicity and Online Partnerships<br>
-                                +91-9829971666<br>
-                                adp@bits-apogee.org<br>
-                            </div>
-                        </div>
-                        <div class="person-container">
-                            <div class="person-image"><img src="./imgs/contacts/satyanshrai.jpg" alt="Costa"> </div>
-                            <div class="person-info">
-                                Satyansh Rai <br>
-                                President, Student Union <br>
-                                +91-9151178228 <br>
-                                president@pilani.bits-pilani.ac.in <br>
-                            </div>
-                        </div>
+                
                     </div>
                 </div>
             </div>
