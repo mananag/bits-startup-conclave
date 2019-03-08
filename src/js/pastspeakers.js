@@ -37,11 +37,11 @@ function init() {
     //   subName: "Director of Photography in Lighting, PIXAR (2018)",
     //   img: require("../imgs/speakers/DanielleFeinberg.jpg")
     // },
-    {
-      name: "Kailash Satyarthi",
-      subName: "Nobel Laureate in Peace (2015)",
-      img: require("../imgs/speakers/satyarathi.jpeg")
-    }
+    // {
+    //   name: "Kailash Satyarthi",
+    //   subName: "Nobel Laureate in Peace (2015)",
+    //   img: require("../imgs/speakers/satyarathi.jpeg")
+    // }
   ];
 
   const speakers = document.getElementsByClassName("carousel-speaker")[0];

@@ -42,13 +42,13 @@ function init() {
                 name: "events",
                 particlesColor: "#ffffff"
             },
-            {
-                id: "pastsponsors-image-container",
-                background: "#4E4E4E",
-                fontColor: "#ffffff",
-                name: "pastsponsors",
-                particlesColor: "#ffffff"
-            },
+            // {
+            //     id: "pastsponsors-image-container",
+            //     background: "#4E4E4E",
+            //     fontColor: "#ffffff",
+            //     name: "pastsponsors",
+            //     particlesColor: "#ffffff"
+            // },
             {
                 id: "pastspeakers-image-container",
                 background: "#7D2DC7",
@@ -63,20 +63,20 @@ function init() {
                 name: "paperproject",
                 particlesColor: "#000B37"
             },
-            {
-                id: "ambassador-image-container",
-                background: "#F1356B",
-                fontColor: "#ffffff",
-                name: "ambassador",
-                particlesColor: "#ffffff"
-            },
-            {
-                id: "teaser-image-container",
-                background: "#fafafa",
-                fontColor: "#172148",
-                name: "teaser",
-                particlesColor: "#172148"
-            },
+            // {
+            //     id: "ambassador-image-container",
+            //     background: "#F1356B",
+            //     fontColor: "#ffffff",
+            //     name: "ambassador",
+            //     particlesColor: "#ffffff"
+            // },
+            // {
+            //     id: "teaser-image-container",
+            //     background: "#fafafa",
+            //     fontColor: "#172148",
+            //     name: "teaser",
+            //     particlesColor: "#172148"
+            // },
             {
                 id: "contact-image-container",
                 background: "#000313",
@@ -326,12 +326,12 @@ function init() {
         }
 
         // prevent vertical scroll when on slider and landing
-        document.getElementsByClassName("carousel-events")[0].addEventListener("touchmove", function (e) {
-            e.preventDefault();
-        });
-        document.getElementsByClassName("carousel-pastsponsors")[0].addEventListener("touchmove", function (e) {
-            e.preventDefault();
-        });
+        // document.getElementsByClassName("carousel-events")[0].addEventListener("touchmove", function (e) {
+        //     e.preventDefault();
+        // });
+        // document.getElementsByClassName("carousel-pastsponsors")[0].addEventListener("touchmove", function (e) {
+        //     e.preventDefault();
+        // });
         document.getElementsByClassName("carousel-speaker")[0].addEventListener("touchmove", function (e) {
             e.preventDefault();
         });
