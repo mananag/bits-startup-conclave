@@ -4,6 +4,7 @@ import closeSVG1 from '../images/close-reg.svg';
 import scrollIconSVG from '../images/scroll-icon.svg';
 import socialSVG from '../images/social-icons.svg';
 import apogeeLogoSVG from '../images/apogee-logo.svg';
+import timelineIcon from '../images/timeline.png';
 function init() {
     //import playIconSVG from '../images/youtube_play.svg'
 
@@ -24,6 +25,9 @@ function init() {
 
     const apogeeLogoDiv = document.getElementById('nav-logo');
     apogeeLogoDiv.insertAdjacentHTML('beforeend', apogeeLogoSVG);
+
+    // const timeline = document.getElementById('About');
+    // timeline.style.background="url('../imgs/speakers/richardstallman.jpg')";
 
     //const previewImage = document.getElementById('teaser-preview-image');
     //previewImage.insertAdjacentHTML('beforeend', playIconSVG);
