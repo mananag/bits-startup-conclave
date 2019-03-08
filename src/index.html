@@ -263,11 +263,17 @@
         animation:2000ms pulseInSecondary 600ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
         -webkit-animation:2000ms pulseInSecondary 600ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;	
         }
-        .who-can-apply{
+        .who-can-apply, .elements-econclave {
             line-height: 1.5;
             font-family: 'Overpass', sans-serif;
             font-weight: 400;
             font-size: 1.2em;
+        }
+        .who-can-apply {
+            font-weight: 900;
+        }
+        #About{
+            background: url('timeline.png');  
         }
         .carousel-speaker{
             padding-left: 10vw;
@@ -408,8 +414,8 @@
                     <object type="image/svg+xml" data="./static/svgs/events-main.svg" id="events-image"></object>
                 </div>
 
-                <div id="pastsponsors-image-container" class="image-container">
-                </div>
+                <!-- <div id="pastsponsors-image-container" class="image-container">
+                </div> -->
 <!-- 
                 <div id="teaser-image-container" class="image-container">
                     <object type="image/svg+xml" data="./static/svgs/teaser-main.svg" id="teaser-image"></object>
@@ -425,13 +431,14 @@
 
             <div id="main-text-container">
                 <div id="landing-text-container" class="text-container">
-                    <h2>BITS PILANI ENTERPRENEURSHIP EVENT-NEXT FOUNDER'S</h2>
-                    <h2>30 March,2019</h2>
-                    <h2>BITS Pilani, Pilani Campus</h2>
+                    <h2>BITS PILANI ENTERPRENEURSHIP EVENT</h2>
+                    <h2>NEXT FOUNDERS</h2>
+                    <h4>30 March,2019</h4>
+                    <h4>BITS Pilani, Pilani Campus</h4>
                 </div>
 
                 <div id="about-text-container" class="text-container">
-                    <h2>WHAT IS BITS Pilani Enterpreneurship Conclave</h2>
+                    <h2>WHAT IS BITS Pilani Enterpreneurship Conclave?</h2>
                     <p>BITS Pilani Entrepreneurship Conclave is an initiative by APOGEE to bring together the finest minds redefining entrepreneurship and product innovation, to build conversation on the new frontiers 
                         of startups and provide the next generation founders an opportunity to showcase their budding venture at a national platform to top mentors and 
                         investors.
@@ -445,18 +452,20 @@
                         The Event shall be a 3-phase competition set to conclude on 30th March during APOGEE, the annual academic festival of BITS Pilani- Pilani Campus
                         . With exciting prizes and rewards for the winners, 
                         the event is an ideal platform for all the budding entreprenuers to showcase their vision and business acumen.
-                        The Elements of the Entrepreneurship Conclave will include – (Please Use Elements/Graphics to denote the elements)
-                        Business Plan Competition
-                        Guest Lectures 
-                        Workshops
-                        Speed Dating – Investor Networking
-                        Who Can Apply?
-                        <ul class="who-can-apply">
+                        The Elements of the Entrepreneurship Conclave will include –
+                        <ul class="elements-econclave">
                             <li>Business Plan Competition</li>
                             <li>Guest Lectures</li>
                             <li>Workshops</li>
                             <li>Speed Dating – Investor Networking</li>
                         </ul>
+                        <br />
+                        <br />
+                        <span class="who-can-apply">
+                            Who Can Apply?
+                            <br />
+                            UG or PG student in any recognised college/university can participate.
+                        </span>
                         <div id="About"></div>
                     </p>
                     <!-- <div id="pep-btns">
@@ -485,16 +494,16 @@
                             <li>Access to YourStory research reports (worth INR 25,000)</li>
                         </ul>
                         </p>
-                    <div class="carousel-events" >
-                    </div>
+                    <!-- <div class="carousel-events" >
+                    </div> -->
                     
                 </div>
 
-                <div id="pastsponsors-text-container" class="text-container">
+                <!-- <div id="pastsponsors-text-container" class="text-container">
                     <h2>SPONSORS</h2>
                     <div id="pastsponsor-container" class="carousel-pastsponsors">
                     </div>
-                </div>
+                </div> -->
 
                 <!-- <div id="teaser-text-container" class="text-container">
                     <h2>TEASER</h2>
