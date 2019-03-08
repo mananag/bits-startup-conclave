@@ -44,6 +44,12 @@
     font-weight: 400;
     font-size: 1.2em;
   }
+  #About{
+    background: url("../../images/timeline.png");
+    height: 250px;
+    width: 570px;
+  }
+
 }
 
 @media all and (max-width: 1000px) {
@@ -53,11 +59,20 @@
 
   #paperproject-text-container {
     justify-content: flex-start;
+    
+    transform: translateY(-50px);
     h2 {
-      font-size: 1.5em;
+      font-size: 1em;
+      margin-bottom: 1px; 
     }
     p {
-      max-height: 45vh;
+    height: fit-content;
+    }
+    #About{
+      background: url("../../images/timeline.png");
+      height: 160px;
+      width: 348px;
+      background-size: cover;
     }
   }
   
