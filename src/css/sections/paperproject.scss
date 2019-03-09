@@ -68,13 +68,21 @@
     p {
     height: fit-content;
     overflow-y: hidden;
+    line-height: 1.2;
+    font-size: 1.1em;
+    margin-bottom: 10px;
     }
     #About{
       background: url("../../images/timeline.png");
       height: 160px;
       width: 348px;
       background-size: cover;
+      margin-top: 10px;
     }
+    .who-can-apply, .elements-econclave {
+      line-height: 1.1;
+      font-size: 1.1em;
+  }
   }
   
   #paperproject-image {
