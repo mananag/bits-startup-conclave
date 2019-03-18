@@ -3,30 +3,30 @@ function init() {
 
   const pastSpeakers = [
     {
-      name: "Ritesh Agarwal",
-      subName: "Founder and CEO,OYO",
-      img: require("../imgs/speakers/apj.jpeg")
+      name: "Shradha Sharma",
+      subName: "Founder, CEO and Chief Editor of YourStory. Former Assistant Vice President at     CNBC TV18",
+      img: require("../imgs/speakers/shradhaSharma.png")
     },
     {
-      name: "Pawan Agarwal",
-      subName: "FounderCEO, Dabbawala’s Organisation (Mumbai)",
-      img: require("../imgs/speakers/jimmywales.jpg")
+      name: "Ajay Bohora",
+      subName: "The man who transformed the world of finance, Co-Founder and MD HDFC Credila, Ex-Board of Directors of WNS Global Systems",
+      img: require("../imgs/speakers/ajayBohra.png")
     },
     {
-      name: "Sanjay Nath",
-      subName: "Managing Partner, Blume Ventures",
-      img: require("../imgs/speakers/walterlewin.jpg")
+      name: "Utkarsh Amitabh",
+      subName: "Business Development Manager at Microsoft, Founder of Networkcapital.co and global shaper at the World Economic Forum",
+      img: require("../imgs/speakers/utkarshAmitabh.png")
     },
     {
-      name: "Divya Narendran",
-      subName: "Co-founder & CEO, SumZero",
-      img: require("../imgs/speakers/richardstallman.jpg")
+      name: "Sanjay Agarwal",
+      subName: "Renowned entrepreneur, Gold medallist Chartered Accountant and MD and CEO, AU Small Finance Bank",
+      img: require("../imgs/speakers/sanjayAgarwal.png")
     },
-    // {
-    //   name: "Salman Khurshid",
-    //   subName: "Former Minister of Law and Justice (2017)",
-    //   img: require("../imgs/speakers/SalmanKhursheed.jpg")
-    // },
+     {
+       name: "Chandan Agarwal",
+       subName: "President of Hindalco Industries Limited, a Chartered Accountant and MBA graduate from Indian School of Business",
+       img: require("../imgs/speakers/chandanAgarwal.png")
+      }
     // {
     //   name: "Simon Taufel",
     //   subName: "Retired Elite Cricket Umpire (2017)",
