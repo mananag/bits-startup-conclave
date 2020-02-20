@@ -33,7 +33,11 @@ body {
   flex-direction: column;
   overflow-x: hidden;
 }
-
+@media all and (max-width: 1000px) {
+  #main-text-container{
+    overflow-y: hidden;
+  }
+}
 #main-image-container {
     background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,50,119,1) 100%);;
     transition: background-color ease-in-out 0.2s;
