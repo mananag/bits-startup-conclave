@@ -1,5 +1,5 @@
 #contact-text-container {
-  height: 80vh;
+  height: 100vh;
 	width: 100%;
   text-align: center;
   margin-bottom: 0;
@@ -25,6 +25,7 @@
 #contact-image-container {
   height: 45vh;
 	background: black;
+	display:none;
 }
 div#contact-text-container {
 	background-color: black;
@@ -83,6 +84,7 @@ div#contact-text-container {
 @media (max-width: 1000px) {
 	#contact-text-container {
 		margin-bottom: 0;
+		height: 80vh;
 		
 		h3 {
 			margin-top: 10px;
@@ -90,6 +92,9 @@ div#contact-text-container {
 		h4 {
 			display: none;
 		}
+	}
+	#contact-image-container {
+		display: block;
 	}
 }
 
