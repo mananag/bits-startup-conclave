@@ -32,11 +32,11 @@
   color: #172148;
   margin-left: 10vw;
   margin-bottom: -15vh;
-
   h2 {
     font-size: 3.5em;
     margin-bottom: 20px;
     font-family: 'BoldFont', sans-serif;
+    margin-top: -30vh;
   }
 
   p {
@@ -65,7 +65,8 @@
     transform: translateY(-50px);
     h2 {
       font-size: 1em;
-      margin-bottom: 1px; 
+      margin-bottom: 1px;
+      margin-top: 5vh;
     }
     p {
     height: fit-content;
@@ -91,6 +92,10 @@
     #paperproject-text-container
     {
       margin-top: 5vh;
+      h2{
+
+        margin-top: 15vh;
+      }
     }
   }
   @media all and (max-width: 400px)
@@ -99,6 +104,14 @@
     {
 
       transform: scale(0.9)translateY(-100px);
+    }
+  }
+  @media all and (max-width: 350px)
+  {
+    #paperproject-text-container
+    {
+
+      transform: scale(0.8)translateY(-100px);
     }
   }
   #paperproject-image {
