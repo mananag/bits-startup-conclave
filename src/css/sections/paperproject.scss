@@ -102,8 +102,8 @@
   {
     #paperproject-text-container
     {
-
-      transform: scale(0.9)translateY(-100px);
+      margin-top: 5vh;
+      transform: scale(0.9,0.85)translateY(-100px);
     }
   }
   @media all and (max-width: 350px)
