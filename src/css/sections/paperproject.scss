@@ -93,6 +93,14 @@
       margin-top: 5vh;
     }
   }
+  @media all and (max-width: 400px)
+  {
+    #paperproject-text-container
+    {
+
+      transform: scale(0.9)translateY(-100px);
+    }
+  }
   #paperproject-image {
     width: auto;
     height: 120vh;
