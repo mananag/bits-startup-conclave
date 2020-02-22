@@ -22,14 +22,13 @@
 #landing-text-container-inner{
     height: 50vh;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: 50vh;
     margin-bottom: 40vh;
-    border: white 5px solid;
     margin-left : 5vw;
     padding: 50px;
 
     h2, h4{
-        font-family: 'TekoLight', sans-serif;
+        font-family: 'BoldFont', sans-serif;
         font-weight: 300;
         letter-spacing: 30px;
         font-size: 20px;
@@ -42,7 +41,7 @@
         letter-spacing: 8px;
     }
     p{
-        font-family: TekoLight;
+        font-family: BoldFont;
         font-size: 3em;
     }
 }
@@ -70,11 +69,15 @@
             font-size: 25px;
             letter-spacing: 3px;
         }
+        p {
+            font-size: 2em;
+        }
         width: 95vw;
         height: 70vh;
         margin-left: 0px;
         margin-bottom: 15vh;
         padding: 50px 0px;
+        margin-top: 25vh;
     }
     #landing-image {
         height: auto;
