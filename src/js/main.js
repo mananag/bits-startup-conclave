@@ -332,9 +332,9 @@ function init() {
         // document.getElementsByClassName("carousel-pastsponsors")[0].addEventListener("touchmove", function (e) {
         //     e.preventDefault();
         // });
-        document.getElementsByClassName("carousel-speaker")[0].addEventListener("touchmove", function (e) {
-            e.preventDefault();
-        });
+        // document.getElementsByClassName("carousel-speaker")[0].addEventListener("touchmove", function (e) {
+            // e.preventDefault();
+        // });
         document.getElementsByClassName("carousel-contact")[0].addEventListener("touchmove", function (e) {
             e.preventDefault();
         });
