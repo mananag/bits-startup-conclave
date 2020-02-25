@@ -5,16 +5,17 @@
 	  margin-bottom: 0;
 		h3{
 			font-family: 'TekoLight', 'sans-serif';
-			font-size: 48px;
+			font-size: 4.5em;
 			width: 100%;
 			margin-top: -20vh;
 		// margin-top: 10px;
-		letter-spacing: 15px;
+		letter-spacing: 20px;
 		}
 		h4{
 			font-family: 'TekoLight';
 			width: 100%;
-			font-size: 32px;
+			font-size: 40px;
+			letter-spacing: 5px;
 		}
 		@media (max-width: 480px) {
 			h3 {
