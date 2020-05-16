@@ -58,10 +58,6 @@
     h2 {
       font-size: 2.5em !important;
     }
-    p {
-      max-height: 50vh;
-      overflow: auto;
-    }
   }
 
   #menu {
@@ -72,10 +68,13 @@
 
   #about-image-container {
     background: #0A81D1;
+    height: 120vh;
   }
 
   #events-image-container {
     background: #37CC9C;
+    opacity: 0;
+    margin-bottom: -42vh;
   }
 
   #pastsponsors-image-container {
@@ -111,5 +110,24 @@
 @media (max-width: 400px) {
   #menu-text {
     display: none
+  }
+  #about-text-container{
+      width: 95vw;
+    height: 900px;
+  }
+  #about-image-container{
+    height: 900px;
+  }
+}
+@media (max-width: 350px) {
+  #menu-text {
+    display: none
+  }
+  #about-text-container{
+    width: 95vw;
+    height: 950px;
+  }
+  #about-image-container{
+    height: 950px;
   }
 }
