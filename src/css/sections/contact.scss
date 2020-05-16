@@ -68,7 +68,6 @@
 				width: 32%;
 				margin-left: 0px;
 			}
-<<<<<<< HEAD
 		}
 
 		@media (max-width: 750px) {
@@ -121,57 +120,3 @@
 			}
 		}
 	}
-=======
-		}
-
-		@media (max-width: 750px) {
-			.person-container {
-				width: 50%;
-				transform: scale(0.9);
-			}
-		}
-
-		@media (max-width: 480px) {
-			.person-container {
-				width: 100%;
-				transform: scale(0.8);
-			}
-		}
-	}
-
-	@media (min-width: 1000px) {
-		#contact-text-container {
-			overflow-y: auto;
-		}
-	}
-
-	@media (max-width: 1000px) {
-		#contact-text-container {
-			margin-bottom: 0;
-			height: 80vh;
-
-			h3 {
-				margin-top: -30vh;
-			}
-			h4 {
-				display: none;
-			}
-		}
-		#contact-image-container {
-			display: block;
-			margin-top: 0vh;
-		}
-	}
-
-	@media (max-width: 600px) {
-		#contact-text-container {
-			h3 {
-				font-size: 2.3em;
-				margin-left: 5px;
-			}
-			.person-container {
-				width: 50%;
-			}
-		}
-	}
->>>>>>> 21fff2b5a8f25a4119df0f400a22109e8c200229

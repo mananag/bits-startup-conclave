@@ -68,23 +68,23 @@ function init() {
       wrap.appendChild(speakerName);
       wrap.appendChild(speakerSubName);
 
-      // speakers.appendChild(wrap);  
+      speakers.appendChild(wrap);
     }
   );
 
-  // const flkty2 = new flickity(
-  //   '.carousel-speaker', {
-  //     wrapAround: true,
-  //     draggable: true,
-  //     pageDots: false,
-  //   }
-  // );
+  const flkty2 = new flickity(
+    '.carousel-speaker', {
+      wrapAround: true,
+      draggable: true,
+      pageDots: false,
+    }
+  );
 
-  // setTimeout(function () {
-  //   flkty2.reloadCells();
-  //   flkty2.reloadCells();
-  //   flkty2.next();
-  // }, 500);
+  setTimeout(function () {
+    flkty2.reloadCells();
+    flkty2.reloadCells();
+    flkty2.next();
+  }, 500);
 }
 
 init();
