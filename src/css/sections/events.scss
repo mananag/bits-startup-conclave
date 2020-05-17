@@ -87,15 +87,23 @@
   #events-text-container {
     margin-top: -10vh;
     transform: scale(0.8);
+    width: 90vw;
+    p{
+      font-size: 1.4em;
+    }
   }
 }
 @media all and (max-width: 350px)
 {
   #events-text-container {
-    margin-top: -10vh;
-    transform: scale(0.8,0.75);
+    margin-top: -20vh;
+    transform: scale(0.8, 0.75);
+    width: 90vw;
     h2{
       margin-top: -24vh;
+    }
+    p{
+      font-size: 1.2em;
     }
   }
 }
